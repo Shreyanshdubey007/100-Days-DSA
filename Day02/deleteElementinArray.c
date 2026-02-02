@@ -15,14 +15,14 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("Enter position to delete Element: ");
+    printf("Enter position to delete Element: "); //1-based position (start from 1, 2, 3...)
     scanf("%d", &pos);
 
-    for(int i = pos - 1; i < n - 1; i++){
+    for(int i = pos - 1; i < n - 1; i++){ //Deleting means shifting elements to the left
         arr[i] = arr[i + 1];
     }
 
-    printf("Updated Array: ");
+    printf("Updated Array: "); //Array displayed after removing the element
     for(int i = 0; i < n - 1; i++){
         printf("%d ", arr[i]);
     }
