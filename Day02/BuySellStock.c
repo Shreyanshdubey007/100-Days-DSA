@@ -10,10 +10,10 @@ int maxProfit(int* prices, int pricesSize) {
 
     for(int i = 1; i < pricesSize; i++) {
         if(prices[i] < minPrice) {
-            minPrice = prices[i];  // better day to buy
+            minPrice = prices[i];  //Better day to buy
         }
         else if(prices[i] - minPrice > maxProfit) {
-            maxProfit = prices[i] - minPrice; // better profit
+            maxProfit = prices[i] - minPrice;  //Better profit
         }
     }
     return maxProfit;
@@ -22,7 +22,7 @@ int maxProfit(int* prices, int pricesSize) {
 int main() {
 
     int prices[] = {7, 1, 5, 3, 6, 4};
-    int n = sizeof(prices) / sizeof(prices[0]);
+    int n = sizeof(prices) / sizeof(prices[0]); //Tells size of Array
 
     int result = maxProfit(prices, n);
 
