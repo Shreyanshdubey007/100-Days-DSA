@@ -10,10 +10,10 @@ int maxProfit(int* prices, int pricesSize) {
 
     for(int i = 1; i < pricesSize; i++) {
         if(prices[i] < minPrice) {
-            minPrice = prices[i];  //Better day to buy
+            minPrice = prices[i];   //Better day to buy
         }
         else if(prices[i] - minPrice > maxProfit) {
-            maxProfit = prices[i] - minPrice;  //Better profit
+            maxProfit = prices[i] - minPrice;   //Better profit
         }
     }
     return maxProfit;
