@@ -5,12 +5,12 @@
 
 #include <stdio.h>
 
-int missingNumber(int* nums, int numsSize) {
+int missingNumber(int* arr, int numsSize) {
     long long expectedSum = (long long)numsSize * (numsSize + 1) / 2;
     long long actualSum = 0;
 
     for(int i = 0; i < numsSize; i++) {
-        actualSum += nums[i];
+        actualSum += arr[i];
     }
 
     return (int)(expectedSum - actualSum);
@@ -18,10 +18,10 @@ int missingNumber(int* nums, int numsSize) {
 
 int main() {
 
-    int nums[] = {9,6,4,2,3,5,7,0,1};
-    int numsSize = sizeof(nums) / sizeof(nums[0]);
+    int arr[] = {9,6,4,2,3,5,7,0,1};
+    int numsSize = sizeof(arr) / sizeof(arr[0]);
 
-    int missing = missingNumber(nums, numsSize);
+    int missing = missingNumber(arr, numsSize);
 
     printf("Missing number is: %d\n", missing);
 
