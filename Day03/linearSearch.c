@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 int main() {
-
     int n, k, foundIndex = -1,comparison = 0;
 
     printf("Enter number of elements: ");
@@ -31,7 +30,7 @@ int main() {
     if(foundIndex != -1)
         printf("Found at index %d\n", foundIndex);
     else
-        printf("Not Found\n");
+        printf("Not Found!\n");
 
     printf("Comparisons = %d", comparison);
 
