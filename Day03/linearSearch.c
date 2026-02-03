@@ -4,7 +4,7 @@
 
 int main() {
 
-    int n, k, found = -1,c = 0;
+    int n, k, foundIndex = -1,comparison = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
@@ -21,19 +21,19 @@ int main() {
 
     //Linear Search
     for(int i = 0; i < n; i++){
-        c++;
+        comparison++;
         if(arr[i] == k){
-            found = i;
+            foundIndex = i;
             break;
         }
     }
 
-    if(found != -1)
-        printf("Found at index %d\n", found);
+    if(foundIndex != -1)
+        printf("Found at index %d\n", foundIndex);
     else
         printf("Not Found\n");
 
-    printf("Comparisons = %d", c);
+    printf("Comparisons = %d", comparison);
 
     return 0;
 }
