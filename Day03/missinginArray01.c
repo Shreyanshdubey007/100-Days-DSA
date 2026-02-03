@@ -2,6 +2,8 @@
 //This array represents a permutation of the integers from 1 to n with one element missing.
 //Your task is to identify and return the missing element.
 
+//1-Based position
+
 #include <stdio.h>
 
 int missingNum(int *arr, int size) {
