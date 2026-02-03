@@ -18,7 +18,7 @@ int missingNumber(int* nums, int numsSize) {
 
 int main() {
 
-    int nums[] = {3, 0, 1};
+    int nums[] = {9,6,4,2,3,5,7,0,1};
     int numsSize = sizeof(nums) / sizeof(nums[0]);
 
     int missing = missingNumber(nums, numsSize);
