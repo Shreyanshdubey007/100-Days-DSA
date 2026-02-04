@@ -1,6 +1,11 @@
-//Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
-//The order of the elements may be changed.
-//Then return the number of elements in nums which are not equal to val.
+/*
+Problem:
+Given an integer array nums and an integer val, remove all occurrences of val from the array in-place.
+Rearrange the array such that the first k elements contain only the elements not equal to val.
+The order of elements may change and no extra array should be used.
+Return k, the number of elements remaining after removal.
+Elements beyond the first k positions are not important.
+*/
 
 #include <stdio.h>
 
