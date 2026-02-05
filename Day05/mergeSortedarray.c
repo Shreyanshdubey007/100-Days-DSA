@@ -4,7 +4,7 @@ Merge nums1 and nums2 into a single array sorted in non-decreasing order.*/
 
 #include <stdio.h>
 
-void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
+void merge(int* nums1, int m, int* nums2, int n) {
 
     // i points to the last valid element in nums1
     int i = m - 1;
@@ -36,13 +36,27 @@ void merge(int* nums1, int nums1Size, int m, int* nums2, int nums2Size, int n) {
 }
 
 int main() {
-    int nums1[10] = {1, 3, 5};
-    int nums2[4] = {2, 4, 6, 7};
 
-    int m = 3;
-    int n = 4;
+    int m,n;
 
-    merge(nums1, 10, m, nums2, 4, n);
+    printf("Enter number of terms in 1st Array: ");
+    scanf("%d", &m);
+
+    printf("Enter number of terms in 2nd Array: ");
+    scanf("%d", &n);
+    
+    int nums1[m + n];
+    int nums2[n];
+
+    printf("Enter %d elements of 1st Array: ", m);
+    for(int i = 0; i < m; i++)
+        scanf("%d", &nums1[i]);
+
+    printf("Enter %d elements of 2nd Array: ", n);
+    for(int i = 0; i < n; i++)
+        scanf("%d", &nums2[i]);
+
+    merge(nums1, m, nums2, n);
 
     printf("Merged array: ");
     for (int i = 0; i < m + n; i++) {
