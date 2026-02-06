@@ -16,17 +16,17 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    if(n == 0)
+    if(n == 0)  // If elements are entered 0, program ends.
         return 0;
 
     for(int i = 1; i < n; i++){
-        if(arr[i] != arr[i - 1]){
-            arr[k] = arr[i];
+        if(arr[i] != arr[i - 1]){  // Checks current element to previous
+            arr[k] = arr[i];  // Assigns current value to value at arr[k]
             k++;
         }
     }
 
-    printf("Array: ");
+    printf("Array: ");  // Prints array after removing all duplicates
     for(int i = 0; i < k; i++){
         printf("%d ", arr[i]);
     }
