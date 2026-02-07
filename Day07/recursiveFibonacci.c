@@ -15,13 +15,13 @@ int fibonacci(int n){
 
 int main() {
 
-    int n;
+    int* n;
 
     printf("Enter number of terms: ");
-    scanf("%d", &n);
+    scanf("%d", n);
 
     printf("Fibonacci Series: ");
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < *n; i++){
         printf("%d ", fibonacci(i));
     }
 
