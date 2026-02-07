@@ -1,6 +1,4 @@
-//The Fibonacci numbers, commonly denoted F(n) form a sequence,
-//called the Fibonacci sequence, such that each number is the
-//sum of the two preceding ones, starting from 0 and 1. 
+//The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. 
 
 #include <stdio.h>
 
@@ -21,13 +19,13 @@ int fibonacci(int n) {
 }
 
 int main() {
-    int n;
+    int* n;
 
     printf("Enter number of terms: ");
-    scanf("%d", &n);
+    scanf("%d", n);
 
     printf("Fibonacci Series: ");
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < *n; i++){
         printf("%d ", fibonacci(i));
     }
 
