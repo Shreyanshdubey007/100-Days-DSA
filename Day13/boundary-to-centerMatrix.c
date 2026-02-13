@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 int main() {
+    
     int r, c;
 
     printf("Enter number of rows and columns: ");
