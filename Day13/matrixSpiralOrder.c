@@ -50,7 +50,7 @@ int main() {
     for (int i = 0; i < m; i++) {
         matrix[i] = (int*)malloc(n * sizeof(int));
     }
-
+    
     printf("Enter matrix elements:\n");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
