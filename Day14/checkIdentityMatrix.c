@@ -4,6 +4,7 @@
 #include <stdio.h>
 
 int main() {
+    
     int n;
 
     printf("Enter Size of Matrix: ");
