@@ -24,6 +24,7 @@ void rotate(int** matrix, int matrixSize, int* matrixColSize) {
 }
 
 int main() {
+    
     int n;
 
     printf("Enter size of matrix: ");
