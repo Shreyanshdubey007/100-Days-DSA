@@ -18,7 +18,7 @@ int main() {
     int sum = 0;
 
     for(int i = 0; i < n; i++){
-    sum += arr[i][i];
+        sum += arr[i][i];
     }
 
     printf("The Sum of Diagonal Elements of Matrix: %d", sum);
