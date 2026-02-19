@@ -9,9 +9,12 @@ int absVal(int x) {
 
 int main() {
     int n;
+    printf("Enter nunber of elements in Array: ");
     scanf("%d", &n);
 
     int arr[n];
+
+    printf("Enter %d elements in Array: ", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
@@ -30,7 +33,7 @@ int main() {
         }
     }
 
-    printf("%d %d\n", a, b);
+    printf("Pair whose sum will be closest to zero: %d %d\n", a, b);
 
     return 0;
 }
