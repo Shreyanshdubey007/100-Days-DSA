@@ -222,3 +222,4 @@ DSA practice on 2026-02-20 - session 2
 DSA practice on 2026-02-20 - session 3
 DSA practice on 2026-02-20 - session 4
 DSA practice on 2026-02-20 - session 5
+DSA practice on 2026-02-20 - session 6
