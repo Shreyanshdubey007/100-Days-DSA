@@ -13,11 +13,12 @@ int main() {
     int n, i, value;
     struct Node *head = NULL, *temp = NULL, *newNode = NULL;
 
-    printf("Enter number of elements: ");
+    printf("Enter number of nodes in the linked list: ");
     scanf("%d", &n);
 
-    printf("Enter elements in List: ");
+    printf("Enter %d elements:\n", n);
     for(i = 0; i < n; i++) {
+        printf("Element %d: ", i + 1);
         scanf("%d", &value);
 
         newNode = (struct Node*)malloc(sizeof(struct Node));
@@ -33,7 +34,7 @@ int main() {
         }
     }
 
-    // Traverse and print linked list
+    printf("Linked List elements are: ");
     temp = head;
     while(temp != NULL) {
         printf("%d ", temp->data);
