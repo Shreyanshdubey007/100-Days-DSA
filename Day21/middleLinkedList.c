@@ -25,10 +25,12 @@ struct ListNode* middleNode(struct ListNode* head) {
 
 int main() {
     int n, x;
+    printf("Enter number of nodes: ");
     scanf("%d", &n);
 
     struct ListNode *head = NULL, *temp = NULL, *newNode;
 
+    printf("Enter %d elements: ", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &x);
         newNode = (struct ListNode*)malloc(sizeof(struct ListNode));
@@ -45,6 +47,7 @@ int main() {
 
     struct ListNode *mid = middleNode(head);
 
+    printf("Middle onwards: ");
     while (mid != NULL) {
         printf("%d ", mid->val);
         mid = mid->next;
