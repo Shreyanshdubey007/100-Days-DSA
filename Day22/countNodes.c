@@ -37,7 +37,6 @@ int main() {
         count++;
         temp = temp->next;
     }
-
     printf("Number of nodes: %d", count);
 
     return 0;
