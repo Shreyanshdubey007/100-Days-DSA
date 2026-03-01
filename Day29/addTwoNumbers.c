@@ -37,7 +37,6 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
 
         carry = sum / 10;
     }
-
     return dummy.next;
 }
 
@@ -60,7 +59,6 @@ struct ListNode* createList(int n) {
             temp = newNode;
         }
     }
-
     return head;
 }
 
