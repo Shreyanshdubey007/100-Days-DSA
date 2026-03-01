@@ -11,7 +11,6 @@ struct Node {
 struct Node* rotateRight(struct Node* head, int k) {
     if (head == NULL || head->next == NULL || k == 0)
         return head;
-
     struct Node* temp = head;
     int n = 1;
 
