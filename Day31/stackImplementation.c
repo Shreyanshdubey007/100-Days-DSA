@@ -1,7 +1,6 @@
 //Problem: Implement a stack data structure using an array with the following operations: push, pop, and display.
 
 #include <stdio.h>
-
 #define MAX 1000
 
 int stack[MAX];
