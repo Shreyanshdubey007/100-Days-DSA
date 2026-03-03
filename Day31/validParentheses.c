@@ -25,7 +25,9 @@ bool isValid(char* s) {
 }
 
 int main() {
+
     char s[10001];
+    
     printf("Enter the string: ");
     scanf("%s", s);
 
