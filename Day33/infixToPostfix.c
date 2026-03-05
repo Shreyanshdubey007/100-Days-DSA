@@ -81,9 +81,8 @@ void infixToPostfix(char* expr) {
     while (top != -1) {
         result[k++] = pop();
     }
-
     result[k] = '\0';
-
+    
     printf("Postfix expression: %s\n", result);
 }
 
