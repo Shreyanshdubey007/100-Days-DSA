@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 #define MAX 10001
 
 int evalRPN(char** tokens, int tokensSize) {
