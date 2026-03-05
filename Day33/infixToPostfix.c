@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <string.h>
-
 #define MAX 1000
 
 char stack[MAX];
