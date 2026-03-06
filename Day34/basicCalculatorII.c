@@ -1,7 +1,6 @@
 //Given a string s which represents an expression, evaluate this expression and return its value. 
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 #include <string.h>
