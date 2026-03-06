@@ -82,6 +82,5 @@ int main() {
     int result = evaluatePostfix(expr);
 
     printf("Result: %d\n", result);
-
     return 0;
 }
