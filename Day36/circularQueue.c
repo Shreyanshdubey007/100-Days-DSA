@@ -1,7 +1,6 @@
 //Problem: Circular Queue Using Array - Implement using linked list with dynamic memory allocation.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 #define MAX 1000
