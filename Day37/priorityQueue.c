@@ -1,7 +1,6 @@
 //Problem Statement: Implement a Priority Queue using an array. An element with smaller value has higher priority.
 
 #include <stdio.h>
-
 #define MAX 1000
 
 int pq[MAX];
