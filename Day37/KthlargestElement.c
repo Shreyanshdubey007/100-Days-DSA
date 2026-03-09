@@ -59,7 +59,7 @@ KthLargest* kthLargestCreate(int k, int* nums, int numsSize) {
     obj->k = k;
 
     for (int i = 0; i < numsSize; i++) {
-        if (obj->size < k) {
+        if (obj->size < obj->k) {
             obj->minHeap[obj->size++] = nums[i];
             heapifyUp(obj->minHeap, obj->size - 1);
         }
@@ -73,7 +73,7 @@ KthLargest* kthLargestCreate(int k, int* nums, int numsSize) {
 }
 
 int kthLargestAdd(KthLargest* obj, int val) {
-    if (obj->size < k) {
+    if (obj->size < obj->k) {
         obj->minHeap[obj->size++] = val;
         heapifyUp(obj->minHeap, obj->size - 1);
     }
