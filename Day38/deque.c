@@ -1,7 +1,6 @@
 //Problem: Deque (Double-Ended Queue)
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
