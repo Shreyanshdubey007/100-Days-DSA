@@ -3,7 +3,6 @@
 
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 int* maxSlidingWindow(int* nums, int numsSize, int k, int* returnSize) {
