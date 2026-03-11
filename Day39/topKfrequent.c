@@ -34,7 +34,6 @@ int* topKFrequent(int* nums, int numsSize, int k, int* returnSize) {
     for (int i = 0; i < k; i++) {
         result[i] = unique[i];
     }
-
     return result;
 }
 
