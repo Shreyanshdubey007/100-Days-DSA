@@ -3,7 +3,6 @@
 //If there is no future day for which this is possible, keep answer[i] == 0 instead.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 #include <string.h>
