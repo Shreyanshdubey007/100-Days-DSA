@@ -2,7 +2,6 @@
 //First build a max heap, then repeatedly extract the maximum element and place it at the end of the array.
 
 #include <stdio.h>
-
 #define MAX 1000
 
 void heapifyDown(int* arr, int n, int i) {
