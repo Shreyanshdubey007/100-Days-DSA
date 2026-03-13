@@ -1,7 +1,6 @@
 //Problem Statement: Implement a Queue using a linked list supporting enqueue and dequeue operations.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 #include <string.h>
