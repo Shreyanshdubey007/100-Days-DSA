@@ -1,7 +1,6 @@
 //Task Scheduler
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 int leastInterval(char* tasks, int tasksSize, int n) {
