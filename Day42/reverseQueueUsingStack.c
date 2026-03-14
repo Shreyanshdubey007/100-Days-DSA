@@ -1,7 +1,6 @@
 //Problem Statement: Given a queue of integers, reverse the queue using a stack.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct QNode {
