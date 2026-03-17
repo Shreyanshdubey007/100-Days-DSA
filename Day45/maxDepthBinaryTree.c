@@ -46,7 +46,6 @@ struct Node* buildTree(int* arr, int n) {
         }
         i++;
     }
-
     free(queue);
     return root;
 }
