@@ -1,7 +1,6 @@
 //Given the root of a binary tree, return its maximum depth.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
