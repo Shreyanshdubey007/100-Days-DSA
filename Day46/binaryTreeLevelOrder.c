@@ -21,7 +21,6 @@ struct Node* buildTree(int* arr, int n) {
     if (n == 0 || arr[0] == -1) {
         return NULL;
     }
-
     struct Node** queue = (struct Node**)malloc(n * sizeof(struct Node*));
     int front = 0;
     int rear = 0;
@@ -46,7 +45,6 @@ struct Node* buildTree(int* arr, int n) {
         }
         i++;
     }
-
     free(queue);
     return root;
 }
@@ -56,7 +54,6 @@ void levelOrder(struct Node* root) {
         printf("Tree is empty\n");
         return;
     }
-
     struct Node** queue = (struct Node**)malloc(2000 * sizeof(struct Node*));
     int front = 0;
     int rear = 0;
@@ -93,7 +90,6 @@ void levelOrder(struct Node* root) {
         printf("]\n");
         level++;
     }
-
     free(queue);
 }
 
@@ -120,7 +116,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
     struct Node* root = buildTree(arr, n);
 
     levelOrder(root);
