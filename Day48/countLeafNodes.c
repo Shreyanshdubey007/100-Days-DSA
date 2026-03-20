@@ -1,7 +1,6 @@
 //Problem: Count Leaf Nodes
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
