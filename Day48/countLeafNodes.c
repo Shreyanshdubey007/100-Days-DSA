@@ -16,7 +16,6 @@ struct Node* createNode(int val) {
     newNode->right = NULL;
     return newNode;
 }
-
 struct Node* buildTree(int* arr, int n) {
     if (n == 0 || arr[0] == -1) {
         return NULL;
