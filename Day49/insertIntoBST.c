@@ -2,7 +2,6 @@
 //Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
