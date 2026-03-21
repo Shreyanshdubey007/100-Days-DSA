@@ -51,7 +51,6 @@ void freeTree(struct Node* root) {
     freeTree(root->right);
     free(root);
 }
-
 int main() {
     int n, val;
 
@@ -67,7 +66,6 @@ int main() {
         root = insert(root, val);
         printf("Inserted: %d\n", val);
     }
-
     printf("Inorder traversal: ");
     inorder(root);
     printf("\n");
