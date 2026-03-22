@@ -2,7 +2,6 @@
 //Find the node in the BST that the node's value equals val and return the subtree rooted with that node. If such a node does not exist, return null.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
