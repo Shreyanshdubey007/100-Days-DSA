@@ -31,7 +31,6 @@ struct Node* insert(struct Node* root, int val) {
 
     return root;
 }
-
 struct Node* search(struct Node* root, int val) {
     if (root == NULL) {
         return NULL;
@@ -47,7 +46,6 @@ struct Node* search(struct Node* root, int val) {
         return search(root->right, val);
     }
 }
-
 void inorder(struct Node* root) {
     if (root == NULL) {
         return;
@@ -57,7 +55,6 @@ void inorder(struct Node* root) {
     printf("%d ", root->data);
     inorder(root->right);
 }
-
 void freeTree(struct Node* root) {
     if (root == NULL) {
         return;
@@ -67,7 +64,6 @@ void freeTree(struct Node* root) {
     freeTree(root->right);
     free(root);
 }
-
 int main() {
     int n, val, key;
 
