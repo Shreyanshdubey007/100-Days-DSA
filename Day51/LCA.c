@@ -16,7 +16,6 @@ struct Node* createNode(int val) {
     newNode->right = NULL;
     return newNode;
 }
-
 struct Node* insert(struct Node* root, int val) {
     if (root == NULL) {
         return createNode(val);
@@ -31,7 +30,6 @@ struct Node* insert(struct Node* root, int val) {
 
     return root;
 }
-
 struct Node* findLCA(struct Node* root, int p, int q) {
     if (root == NULL) {
         return NULL;
