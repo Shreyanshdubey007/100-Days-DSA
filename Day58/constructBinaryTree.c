@@ -23,7 +23,6 @@ int findIndex(int* inorder, int n, int val) {
             return i;
         }
     }
-
     return -1;
 }
 
