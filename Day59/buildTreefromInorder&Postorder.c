@@ -17,7 +17,6 @@ struct Node* createNode(int val) {
     newNode->right = NULL;
     return newNode;
 }
-
 int findIndex(int* inorder, int n, int val) {
     for (int i = 0; i < n; i++) {
         if (inorder[i] == val) {
@@ -27,7 +26,6 @@ int findIndex(int* inorder, int n, int val) {
 
     return -1;
 }
-
 struct Node* buildTree(int* inorder, int* postorder, int n) {
     if (n == 0) {
         return NULL;
@@ -43,7 +41,6 @@ struct Node* buildTree(int* inorder, int* postorder, int n) {
 
     return root;
 }
-
 void preorder(struct Node* root) {
     if (root == NULL) {
         return;
@@ -53,7 +50,6 @@ void preorder(struct Node* root) {
     preorder(root->left);
     preorder(root->right);
 }
-
 void freeTree(struct Node* root) {
     if (root == NULL) {
         return;
@@ -63,7 +59,6 @@ void freeTree(struct Node* root) {
     freeTree(root->right);
     free(root);
 }
-
 int main() {
     int n;
 
