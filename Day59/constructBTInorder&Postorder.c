@@ -2,7 +2,6 @@
 //postorder is the postorder traversal of the same tree, construct and return the binary tree.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
