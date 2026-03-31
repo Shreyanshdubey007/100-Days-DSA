@@ -1,7 +1,6 @@
 //Problem Statement:Construct a binary tree from given inorder and postorder traversal arrays.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
