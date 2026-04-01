@@ -19,7 +19,3 @@ This challenge focuses on solving **2 Data Structures & Algorithms problems ever
 * Improve DSA fundamentals
 * Build daily coding habit
 * Prepare for technical interviews
-
----
-
-Happy Coding! 🚀
