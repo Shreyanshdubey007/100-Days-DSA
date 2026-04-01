@@ -1,7 +1,6 @@
 //Return the minimum number of cameras needed to monitor all nodes of the tree.
 
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
