@@ -1,7 +1,6 @@
 //Problem Statement:Check whether a given binary tree satisfies the Min-Heap property.
 
-#include <stdio.h>
-
+#include <stdio.h>s
 #include <stdlib.h>
 
 struct Node {
