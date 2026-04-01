@@ -8,7 +8,6 @@ struct Node {
     struct Node* left;
     struct Node* right;
 };
-
 struct Node* createNode(int val) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = val;
@@ -16,7 +15,6 @@ struct Node* createNode(int val) {
     newNode->right = NULL;
     return newNode;
 }
-
 struct Node* buildTree(int* arr, int n) {
     if (n == 0 || arr[0] == -1) {
         return NULL;
@@ -46,11 +44,9 @@ struct Node* buildTree(int* arr, int n) {
         }
         i++;
     }
-
     free(queue);
     return root;
 }
-
 int isMinHeap(struct Node* root) {
     if (root == NULL) {
         return 1;
