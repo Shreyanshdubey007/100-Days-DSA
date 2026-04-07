@@ -18,7 +18,6 @@ void dfs(int** image, int m, int n, int sr, int sc, int color, int origColor) {
     dfs(image, m, n, sr, sc - 1, color, origColor);
     dfs(image, m, n, sr, sc + 1, color, origColor);
 }
-
 void floodFill(int** image, int m, int n, int sr, int sc, int color) {
     int origColor = image[sr][sc];
 
@@ -26,7 +25,6 @@ void floodFill(int** image, int m, int n, int sr, int sc, int color) {
         dfs(image, m, n, sr, sc, color, origColor);
     }
 }
-
 void printImage(int** image, int m, int n) {
     printf("Output:\n");
 
