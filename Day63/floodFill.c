@@ -36,7 +36,6 @@ void printImage(int** image, int m, int n) {
         printf("\n");
     }
 }
-
 int main() {
     int m, n;
 
@@ -61,7 +60,6 @@ int main() {
             scanf("%d", &image[i][j]);
         }
     }
-
     int sr, sc, color;
 
     printf("Enter starting row: ");
