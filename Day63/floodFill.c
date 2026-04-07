@@ -7,7 +7,6 @@ void dfs(int** image, int m, int n, int sr, int sc, int color, int origColor) {
     if (sr < 0 || sr >= m || sc < 0 || sc >= n) {
         return;
     }
-
     if (image[sr][sc] != origColor) {
         return;
     }
