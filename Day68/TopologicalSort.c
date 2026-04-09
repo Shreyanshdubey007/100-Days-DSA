@@ -12,11 +12,9 @@ int n;
 void enqueue(int x) {
     queue[++rear] = x;
 }
-
 int dequeue() {
     return queue[front++];
 }
-
 void topoSort() {
     int count = 0;
 
@@ -53,7 +51,6 @@ void topoSort() {
         printf("\nCycle detected! Topological sort not possible.\n");
     }
 }
-
 int main() {
     int edges, u, v;
 
