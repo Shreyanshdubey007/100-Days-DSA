@@ -9,21 +9,17 @@ int queue[MAX];
 int front = 0, rear = -1;
 int n;
 
-// enqueue
 void enqueue(int x) {
     queue[++rear] = x;
 }
 
-// dequeue
 int dequeue() {
     return queue[front++];
 }
 
-// Kahn's Algorithm
 void topoSort() {
     int count = 0;
 
-    // Step 1: calculate indegree
     for (int i = 0; i < n; i++) {
         indegree[i] = 0;
         for (int j = 0; j < n; j++) {
@@ -32,7 +28,6 @@ void topoSort() {
         }
     }
 
-    // Step 2: add nodes with indegree 0
     for (int i = 0; i < n; i++) {
         if (indegree[i] == 0)
             enqueue(i);
@@ -40,7 +35,6 @@ void topoSort() {
 
     printf("Topological Order: ");
 
-    // Step 3: process queue
     while (front <= rear) {
         int node = dequeue();
         printf("%d ", node);
@@ -55,7 +49,6 @@ void topoSort() {
         }
     }
 
-    // Step 4: check cycle
     if (count != n) {
         printf("\nCycle detected! Topological sort not possible.\n");
     }
@@ -70,7 +63,6 @@ int main() {
     printf("Enter number of edges: ");
     scanf("%d", &edges);
 
-    // initialize graph
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++)
             graph[i][j] = 0;
@@ -79,7 +71,7 @@ int main() {
     printf("Enter edges (u v):\n");
     for (int i = 0; i < edges; i++) {
         scanf("%d %d", &u, &v);
-        graph[u][v] = 1; // directed edge
+        graph[u][v] = 1;
     }
 
     topoSort();
