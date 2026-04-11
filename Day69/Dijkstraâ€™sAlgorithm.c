@@ -1,7 +1,6 @@
 //Problem: Given weighted graph with non-negative edges, compute shortest path from source using priority queue.
 
 #include <stdio.h>
-
 #define MAX 100
 #define INF 999999
 
