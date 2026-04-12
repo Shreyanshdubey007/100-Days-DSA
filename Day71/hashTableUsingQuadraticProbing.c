@@ -1,7 +1,6 @@
 //Problem Statement: Implement a hash table using quadratic probing with formula:
 
 #include <stdio.h>
-
 #include <string.h>
 
 #define EMPTY -1
