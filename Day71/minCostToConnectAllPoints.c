@@ -1,9 +1,7 @@
 //Return the minimum cost to make all points connected. All points are connected if there is exactly one simple path between any two points.
 
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <limits.h>
 
 int minCostConnectPoints(int points[][2], int n)
@@ -15,7 +13,6 @@ int minCostConnectPoints(int points[][2], int n)
     {
         minDist[i] = INT_MAX;
     }
-
     minDist[0] = 0;
     int totalCost = 0;
 
@@ -30,7 +27,6 @@ int minCostConnectPoints(int points[][2], int n)
                 u = i;
             }
         }
-
         inMST[u] = 1;
         totalCost += minDist[u];
 
@@ -48,13 +44,11 @@ int minCostConnectPoints(int points[][2], int n)
             }
         }
     }
-
     free(minDist);
     free(inMST);
 
     return totalCost;
 }
-
 int main()
 {
     int n;
@@ -70,7 +64,6 @@ int main()
         printf("Point %d: ", i + 1);
         scanf("%d %d", &points[i][0], &points[i][1]);
     }
-
     int result = minCostConnectPoints(points, n);
 
     printf("Minimum cost to connect all points: %d\n", result);
