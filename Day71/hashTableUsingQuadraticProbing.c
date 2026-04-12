@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <string.h>
-
 #define EMPTY -1
 
 int table[1000];
@@ -12,7 +11,6 @@ int hash(int k)
 {
     return k % m;
 }
-
 void insert(int k)
 {
     int i = 0;
@@ -30,7 +28,6 @@ void insert(int k)
         i++;
     }
 }
-
 void search(int k)
 {
     int i = 0;
@@ -55,7 +52,6 @@ void search(int k)
 
     printf("NOT FOUND\n");
 }
-
 int main()
 {
     int n;
@@ -84,6 +80,5 @@ int main()
             search(k);
         }
     }
-
     return 0;
 }
