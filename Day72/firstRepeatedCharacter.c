@@ -3,7 +3,6 @@
 //the one whose second occurrence has the smallest index should be returned.
 
 #include <stdio.h>
-
 #include <string.h>
 
 int main() {
