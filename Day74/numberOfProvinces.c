@@ -1,7 +1,6 @@
 //Return the total number of provinces.
 
 #include <stdio.h>
-
 #define MAX 201
 
 int n;
