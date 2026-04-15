@@ -2,7 +2,6 @@
 //determine the candidate who received the maximum number of votes. In case of a tie, return the lexicographically smallest candidate name.
 
 #include <stdio.h>
-
 #include <string.h>
 
 #define MAX 1000
