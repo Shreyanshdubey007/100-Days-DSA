@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <string.h>
-
 #define MAX 1000
 
 int main() {
@@ -17,7 +16,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%s", names[i]);
     }
-
     int maxCount = 0;
     char winner[50];
 
@@ -42,7 +40,6 @@ int main() {
             }
         }
     }
-
     printf("%s %d\n", winner, maxCount);
 
     return 0;
