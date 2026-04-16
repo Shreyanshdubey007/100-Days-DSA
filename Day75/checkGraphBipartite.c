@@ -1,7 +1,6 @@
 //Return true if and only if it is bipartite.
 
 #include <stdio.h>
-
 #define MAX 100
 
 int n;
@@ -56,6 +55,5 @@ int main() {
         printf("Graph is Bipartite\n");
     else
         printf("Graph is NOT Bipartite\n");
-
     return 0;
 }
