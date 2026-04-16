@@ -30,7 +30,6 @@ int main() {
         if (sum == 0) {
             maxLen = i + 1;
         }
-
         // check if sum already exists
         int found = 0;
         for (int j = 0; j < size; j++) {
@@ -42,7 +41,6 @@ int main() {
                 break;
             }
         }
-
         // store sum if not found
         if (!found) {
             prefixSum[size] = sum;
@@ -50,8 +48,6 @@ int main() {
             size++;
         }
     }
-
     printf("Length: %d\n", maxLen);
-
     return 0;
 }
