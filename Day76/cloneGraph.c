@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #define MAX 100
 
 int n;
@@ -20,7 +19,6 @@ void dfs(int node) {
         }
     }
 }
-
 int main() {
     printf("Enter number of nodes: ");
     scanf("%d", &n);
@@ -31,7 +29,6 @@ int main() {
             scanf("%d", &graph[i][j]);
         }
     }
-
     for (int i = 0; i < n; i++)
         visited[i] = 0;
 
