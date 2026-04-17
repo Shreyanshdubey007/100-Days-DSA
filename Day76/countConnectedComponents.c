@@ -1,7 +1,6 @@
 //Problem Statement: Using DFS or BFS, count number of connected components.
 
 #include <stdio.h>
-
 #define MAX 100
 
 int n, m;
