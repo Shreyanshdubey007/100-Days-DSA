@@ -10,14 +10,12 @@ int visited[MAX];
 // DFS
 void dfs(int node) {
     visited[node] = 1;
-
     for (int i = 1; i <= n; i++) {
         if (graph[node][i] == 1 && !visited[i]) {
             dfs(i);
         }
     }
 }
-
 int main() {
     int u, v;
 
@@ -31,7 +29,6 @@ int main() {
             graph[i][j] = 0;
         }
     }
-
     printf("Enter edges:\n");
     for (int i = 0; i < m; i++) {
         scanf("%d %d", &u, &v);
@@ -41,7 +38,6 @@ int main() {
 
     // start DFS from node 1
     dfs(1);
-
     // check if all visited
     int connected = 1;
     for (int i = 1; i <= n; i++) {
@@ -50,11 +46,9 @@ int main() {
             break;
         }
     }
-
     if (connected)
         printf("CONNECTED\n");
     else
         printf("NOT CONNECTED\n");
-
     return 0;
 }
