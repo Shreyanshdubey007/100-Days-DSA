@@ -1,7 +1,6 @@
 //Return all critical connections in the network in any order.
 
 #include <stdio.h>
-
 #define MAX 100
 
 int n, m;
@@ -36,7 +35,6 @@ void dfs(int u, int parent) {
         }
     }
 }
-
 int main() {
     int u, v;
 
@@ -50,15 +48,12 @@ int main() {
             graph[i][j] = 0;
         }
     }
-
     printf("Enter edges:\n");
     for (int i = 0; i < m; i++) {
         scanf("%d %d", &u, &v);
         graph[u][v] = 1;
         graph[v][u] = 1;
     }
-
     dfs(0, -1);
-
     return 0;
 }
