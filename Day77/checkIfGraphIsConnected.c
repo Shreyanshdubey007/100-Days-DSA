@@ -1,7 +1,6 @@
 //Problem Statement: Using BFS or DFS, check if the entire graph is connected.
 
 #include <stdio.h>
-
 #define MAX 100
 
 int n, m;
