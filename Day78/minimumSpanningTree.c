@@ -2,8 +2,6 @@
 
 #include <stdio.h>
 #include <limits.h>
-
-
 #define MAX 100
 
 int n;
@@ -21,7 +19,6 @@ int minKey(int key[], int visited[]) {
     }
     return index;
 }
-
 int primMST() {
     int key[MAX];
     int visited[MAX];
@@ -31,7 +28,6 @@ int primMST() {
         key[i] = INT_MAX;
         visited[i] = 0;
     }
-
     key[0] = 0; // start from node 0
 
     int totalWeight = 0;
@@ -51,7 +47,6 @@ int primMST() {
 
     return totalWeight;
 }
-
 int main() {
     printf("Enter number of nodes: ");
     scanf("%d", &n);
@@ -62,10 +57,7 @@ int main() {
             scanf("%d", &graph[i][j]);
         }
     }
-
     int result = primMST();
-
     printf("Total weight of MST: %d\n", result);
-
     return 0;
 }
