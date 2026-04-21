@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <limits.h>
-
 #define MAX 100
 #define INF 1000000000
 
