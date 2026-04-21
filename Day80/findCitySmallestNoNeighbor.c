@@ -2,7 +2,6 @@
 
 #include <stdio.h>
 #include <limits.h>
-
 #define MAX 100
 #define INF 1000000000
 
@@ -19,7 +18,6 @@ int main() {
             else dist[i][j] = INF;
         }
     }
-
     // edges
     for (int i = 0; i < m; i++) {
         int u, v, w;
@@ -28,7 +26,6 @@ int main() {
         dist[u][v] = w;
         dist[v][u] = w;
     }
-
     int threshold;
     scanf("%d", &threshold);
 
@@ -45,9 +42,7 @@ int main() {
             }
         }
     }
-
     int minCount = INT_MAX, city = -1;
-
     for (int i = 0; i < n; i++) {
         int count = 0;
 
@@ -61,8 +56,6 @@ int main() {
             city = i;
         }
     }
-
     printf("%d\n", city);
-
     return 0;
 }
