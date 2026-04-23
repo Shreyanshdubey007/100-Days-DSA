@@ -11,7 +11,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
     scanf("%d", &target);
 
     int left = 0, right = n - 1;
@@ -27,8 +26,6 @@ int main() {
             left = mid + 1;
         }
     }
-
     printf("%d\n", ans);
-
     return 0;
 }
