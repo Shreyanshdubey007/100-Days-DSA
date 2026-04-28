@@ -16,7 +16,6 @@ int mySqrt(int x)
     while (lo <= hi)
     {
         long mid = lo + (hi - lo) / 2;
-
         if (mid * mid == x)
         {
             return mid;
@@ -31,20 +30,14 @@ int mySqrt(int x)
             hi = mid - 1;
         }
     }
-
     return result;
 }
-
 int main()
 {
     int x;
-
     printf("Enter a non-negative integer: ");
     scanf("%d", &x);
-
     int result = mySqrt(x);
-
     printf("Square root of %d (rounded down): %d\n", x, result);
-
     return 0;
 }
