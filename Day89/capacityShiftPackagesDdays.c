@@ -7,7 +7,7 @@ void findMaxNSum(int* weights, int size, int* low, int* high) {
     }
 }
 
-void findMinWeights(int* weights, int size, int days, int minWeight) {
+int findMinWeights(int* weights, int size, int days, int minWeight) {
     int temp = minWeight;
     int i = 0;
     while (i < size && days > 0) {
